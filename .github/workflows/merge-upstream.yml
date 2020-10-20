@@ -29,12 +29,9 @@ jobs:
     
     steps:
 
+    steps:
     - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        ref: ${{matrix.target}
-        fetch-depth: 0
-        lfs: true
+      uses: actions/checkout@main
 
     - name: Set git identity
       run : |
