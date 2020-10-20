@@ -32,7 +32,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        ref: packages
+        ref: ${{matrix.target}
         fetch-depth: 0
         lfs: true
 
